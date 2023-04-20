@@ -1,0 +1,48 @@
+.root {
+  position: relative;
+  transition-property: all;
+  transition-duration: 0.5s;
+  justify-content: center;
+  display: flex;
+  flex-direction: row;
+  transition-timing-function: ease-in-out;
+  -webkit-transition-property: all;
+  -webkit-transition-timing-function: ease-in-out;
+  -webkit-transition-duration: 0.5s;
+  border-radius: 7px;
+  padding: var(--token-C5OIkKnT1) var(--token-36LjsI7vL);
+  border: 1px solid var(--token-BzCwe2Vml);
+}
+.rootprimary {
+  justify-content: center;
+  border-color: var(--token-Blc2sY2Hm);
+}
+.root:hover {
+  background: #ffffffbf;
+  cursor: pointer;
+  justify-content: center;
+  border-width: 1px;
+}
+.rootprimary:hover {
+  background: #22c55ebd;
+  justify-content: center;
+  border-width: 1px;
+  border-color: var(--token-24poFZAAD);
+}
+.slotTargetChildren {
+  font-size: var(--token-v8MK9LvpQ);
+  color: var(--token-BzCwe2Vml);
+  text-align: center;
+}
+.slotTargetChildrenprimary {
+  color: var(--token-Blc2sY2Hm);
+  text-align: center;
+}
+.root:hover .slotTargetChildren {
+  color: var(--token-DsVkwUyeY);
+  text-align: center;
+}
+.rootprimary:hover .slotTargetChildrenprimary {
+  color: var(--token-BzCwe2Vml);
+  text-align: center;
+}

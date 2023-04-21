@@ -68,7 +68,7 @@ function PlasmicHomepage__RenderFunc(props) {
   return (
     <React.Fragment>
       <Head>
-        <meta name="twitter:card" content="summary" />
+        <meta name="twitter:card" content="summary_large_image" />
         <title key="title">{PlasmicHomepage.pageMetadata.title}</title>
         <meta
           key="og:title"
@@ -80,6 +80,18 @@ function PlasmicHomepage__RenderFunc(props) {
           key="twitter:title"
           name="twitter:title"
           content={PlasmicHomepage.pageMetadata.title}
+        />
+
+        <meta
+          key="og:image"
+          property="og:image"
+          content={PlasmicHomepage.pageMetadata.ogImageSrc}
+        />
+
+        <meta
+          key="twitter:image"
+          name="twitter:image"
+          content={PlasmicHomepage.pageMetadata.ogImageSrc}
         />
       </Head>
 
@@ -613,7 +625,8 @@ export const PlasmicHomepage = Object.assign(
     pageMetadata: {
       title: "Home | Bee Triggered",
       description: "",
-      ogImageSrc: "",
+      ogImageSrc:
+        "https://site-assets.plasmic.app/c8ccae29e1ada44d63345cffd6c43d8e.png",
       canonical: ""
     }
   }

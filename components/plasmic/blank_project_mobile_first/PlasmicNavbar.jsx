@@ -99,19 +99,52 @@ function PlasmicNavbar__RenderFunc(props) {
     >
       {true ? (
         <div className={classNames(projectcss.all, sty.freeBox__otd)}>
-          <p.PlasmicLink
-            className={classNames(
-              projectcss.all,
-              projectcss.a,
-              projectcss.__wab_text,
-              sty.link__tiO5
-            )}
-            component={Link}
-            href={`/`}
-            platform={"nextjs"}
-          >
-            {"Bee Triggered"}
-          </p.PlasmicLink>
+          {true ? (
+            <p.PlasmicLink
+              className={classNames(
+                projectcss.all,
+                projectcss.a,
+                sty.link__yLlN6
+              )}
+              component={Link}
+              href={`/`}
+              platform={"nextjs"}
+            >
+              <p.PlasmicImg
+                data-plasmic-name={"img"}
+                data-plasmic-override={overrides.img}
+                alt={""}
+                className={classNames(sty.img)}
+                displayHeight={"auto"}
+                displayMaxHeight={"none"}
+                displayMaxWidth={"45px"}
+                displayMinHeight={"0"}
+                displayMinWidth={"0"}
+                displayWidth={"100%"}
+                loading={"lazy"}
+                src={{
+                  src: "/plasmic/bee_triggered_marketing/images/logosvg.svg",
+                  fullWidth: 150,
+                  fullHeight: 150,
+                  aspectRatio: 1
+                }}
+              />
+
+              <p.PlasmicLink
+                className={classNames(
+                  projectcss.all,
+                  projectcss.a,
+                  projectcss.__wab_text,
+                  sty.link__tiO5
+                )}
+                component={Link}
+                href={`/`}
+                platform={"nextjs"}
+              >
+                {"Bee Triggered"}
+              </p.PlasmicLink>
+            </p.PlasmicLink>
+          ) : null}
           <div
             className={classNames(projectcss.all, sty.freeBox__qEe2H)}
             onClick={async event => {
@@ -326,7 +359,8 @@ function PlasmicNavbar__RenderFunc(props) {
 }
 
 const PlasmicDescendants = {
-  root: ["root", "button", "text"],
+  root: ["root", "img", "button", "text"],
+  img: ["img"],
   button: ["button", "text"],
   text: ["text"]
 };
@@ -364,6 +398,7 @@ export const PlasmicNavbar = Object.assign(
   makeNodeComponent("root"),
   {
     // Helper components rendering sub-elements
+    img: makeNodeComponent("img"),
     button: makeNodeComponent("button"),
     text: makeNodeComponent("text"),
     // Metadata about props expected for PlasmicNavbar

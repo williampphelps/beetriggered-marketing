@@ -55,7 +55,7 @@
     {
       "projectId": "dYY4WTnFJa6E3gQ6UtpzZr",
       "projectApiToken": "4oXARFJxSqTDeniGlGJAkOFzYimvAU6KRLw5YbMedQiNdrtbtAk85DKMCXmlzpSURLmA7LirK1lEypR52rvUg",
-      "projectName": "Blank project (mobile-first)",
+      "projectName": "BeeTriggeredMarketing",
       "version": "latest",
       "cssFilePath": "plasmic/blank_project_mobile_first/plasmic_blank_project_mobile_first.module.css",
       "components": [
@@ -160,6 +160,11 @@
           "id": "bIPzb40kW",
           "name": "Screenshot 2023-04-20 at 11.20.38 AM.png",
           "filePath": "../public/plasmic/blank_project_mobile_first/images/screenshot20230420At112038AMpng.png"
+        },
+        {
+          "id": "Vze72cd8O",
+          "name": "logo.svg",
+          "filePath": "../public/plasmic/bee_triggered_marketing/images/logosvg.svg"
         }
       ],
       "indirect": false,

@@ -384,7 +384,7 @@ function PlasmicHomepage__RenderFunc(props) {
                     sty.text__btyHr
                   )}
                 >
-                  {"And more..."}
+                  {"And more ..."}
                 </div>
               </div>
             </div>

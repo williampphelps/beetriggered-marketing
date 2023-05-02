@@ -83,6 +83,24 @@ function PlasmicHomepage__RenderFunc(props) {
         />
 
         <meta
+          key="description"
+          name="description"
+          content={PlasmicHomepage.pageMetadata.description}
+        />
+
+        <meta
+          key="og:description"
+          property="og:description"
+          content={PlasmicHomepage.pageMetadata.description}
+        />
+
+        <meta
+          key="twitter:description"
+          name="twitter:description"
+          content={PlasmicHomepage.pageMetadata.description}
+        />
+
+        <meta
           key="og:image"
           property="og:image"
           content={PlasmicHomepage.pageMetadata.ogImageSrc}
@@ -622,9 +640,10 @@ export const PlasmicHomepage = Object.assign(
     // Page metadata
     pageMetadata: {
       title: "Home | Bee Triggered",
-      description: "",
+      description:
+        "Our BuzzBox devices are the ultimate plug and play security solution for your network. Just plug the BuzzBox into an ethernet port, and you'll be instantly alerted when suspicious activity on the network is detected.",
       ogImageSrc:
-        "https://site-assets.plasmic.app/badbdbf6c51a48e6485d70e74629c653.svg",
+        "https://site-assets.plasmic.app/c8ccae29e1ada44d63345cffd6c43d8e.png",
       canonical: ""
     }
   }
